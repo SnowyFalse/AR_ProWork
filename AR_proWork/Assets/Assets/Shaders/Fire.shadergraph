@@ -719,9 +719,9 @@
     "m_ShaderOutputName": "BaseColor",
     "m_StageCapability": 2,
     "m_Value": {
-        "x": 0.7264150977134705,
-        "y": 0.33863431215286257,
-        "z": 0.06510322540998459
+        "x": 0.3764705955982208,
+        "y": 0.27450981736183169,
+        "z": 0.05882352963089943
     },
     "m_DefaultValue": {
         "x": 0.0,
@@ -1489,7 +1489,7 @@
     "m_Hidden": false,
     "m_ShaderOutputName": "Scale",
     "m_StageCapability": 3,
-    "m_Value": 34.5,
+    "m_Value": 50.0,
     "m_DefaultValue": 500.0,
     "m_Labels": []
 }
@@ -1872,7 +1872,7 @@
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
-    "m_Value": 1.2999999523162842,
+    "m_Value": 1.5,
     "m_FloatType": 0,
     "m_RangeValues": {
         "x": 0.0,
@@ -3125,7 +3125,7 @@
     "m_ShaderOutputName": "B",
     "m_StageCapability": 3,
     "m_Value": {
-        "x": 2.700000047683716,
+        "x": 3.0,
         "y": 2.0,
         "z": 2.0,
         "w": 2.0
@@ -3251,7 +3251,7 @@
     "m_ShaderOutputName": "B",
     "m_StageCapability": 3,
     "m_Value": {
-        "e00": -0.5,
+        "e00": 0.10000000149011612,
         "e01": 2.0,
         "e02": 2.0,
         "e03": 2.0,
@@ -3393,9 +3393,9 @@
     "m_ShaderOutputName": "Specular",
     "m_StageCapability": 2,
     "m_Value": {
-        "x": 0.7264150977134705,
-        "y": 0.4459612965583801,
-        "z": 0.2706924080848694
+        "x": 0.3764705955982208,
+        "y": 0.27450981736183169,
+        "z": 0.05882352963089943
     },
     "m_DefaultValue": {
         "x": 0.0,
@@ -3662,9 +3662,9 @@
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
     "m_Value": {
-        "r": 0.6415094137191773,
-        "g": 0.2980392277240753,
-        "b": 0.05749375373125076,
+        "r": 0.5094339847564697,
+        "g": 0.3231898546218872,
+        "b": 0.07929868996143341,
         "a": 0.0
     },
     "isMainColor": false,
@@ -4042,7 +4042,7 @@
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
     "m_Value": {
-        "x": 1.0,
+        "x": 5.0,
         "y": 1.0,
         "z": 0.0,
         "w": 0.0
@@ -4610,7 +4610,7 @@
     "m_Hidden": false,
     "m_ShaderOutputName": "X",
     "m_StageCapability": 3,
-    "m_Value": 0.0,
+    "m_Value": 5.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
 }
