@@ -1,30 +1,51 @@
+
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ObjectCollisionManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    public GameObject singleObject;
+
+    public GameObject firePlusQR;
+    //https://stackoverflow.com/questions/50409639/check-if-collision-between-the-model-and-two-different-objects-is-happening-at-t
+
+    private void Start()
     {
-        
+        singleObject.gameObject.GetComponent<MeshRenderer>().enabled = true;
+        firePlusQR.gameObject.GetComponent<MeshRenderer>().enabled = false;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        
-    }
-
-    private void OnCollisionEnter(Collision col)
-    {
-        switch (col.gameObject.tag)
+        Debug.Log("COLLISION DETECTED");
+        singleObject.gameObject.GetComponent<MeshRenderer>().enabled = false;
+        if (singleObject.gameObject.tag == "Level1")
         {
-            case "Level1":
-                Debug.Log("Level 1");
+            firePlusQR.gameObject.GetComponent<MeshRenderer>().enabled = true;
+        }
+        /*
+        {
+            case "Level2":
+                switch (other.gameObject.tag)
+                {
+                    case "Level1":
+                        Debug.Log("Level 1 + Level 2");
+                        this.gameObject.GetComponent<MeshRenderer>().enabled = false;
+                        Instantiate(cube, transform.position, transform.rotation);
+                        //other.gameObject.GetComponent<MeshRenderer>().enabled = false;
+                        break;
+                }
                 break;
             
-        }
+        }*/
     }
+
+    private void OnTriggerExit(Collider other)
+    {
+        singleObject.gameObject.GetComponent<MeshRenderer>().enabled = true;
+        firePlusQR.gameObject.GetComponent<MeshRenderer>().enabled = false;
+        Debug.Log("COLLISION ENDED");
+    }
+    
 }
