@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 388148704}
   - component: {fileID: 388148703}
   - component: {fileID: 388148702}
+  - component: {fileID: 388148706}
   m_Layer: 0
   m_Name: Plant
   m_TagString: Untagged
@@ -220,6 +221,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &388148706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388148701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb9f0b635c83c50478a27e370f7f3b39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  growVinesMeshes: []
+  timeToGrow: 5
+  refreshRate: 0.05
+  minGrow: 0.2
+  maxGrow: 0.984
 --- !u!1 &394049163
 GameObject:
   m_ObjectHideFlags: 0
@@ -731,6 +749,23 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 6d58037af810b4021ac921a71033e575, type: 3}
+--- !u!114 &1735465603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1735465601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb9f0b635c83c50478a27e370f7f3b39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  growVinesMeshes: []
+  timeToGrow: 5
+  refreshRate: 0.05
+  minGrow: 0.2
+  maxGrow: 0.97
 --- !u!1 &2077792095
 GameObject:
   m_ObjectHideFlags: 0

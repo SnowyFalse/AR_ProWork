@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Grow : MonoBehaviour
 {
-    public List<MeshRenderer> growVinesMehes;
+    public List<MeshRenderer> growVinesMeshes;
     public float timeToGrow = 5;
     public float refreshRate = 0.05f;
     [Range(0,1)]
@@ -13,12 +13,12 @@ public class Grow : MonoBehaviour
     public float maxGrow = 0.97f;
 
     private List<Material> growVinesMaterials = new List<Material>();
-    private bool fullyGrow;
+    private bool fullyGrown;
 
     // Start is called before the first frame update
     void Start()
     {
-        for(int i=0; i< growVinesMehses.Count; i++)
+        for(int i=0; i< growVinesMeshes.Count; i++)
         {
             for(int j=0; j<growVinesMeshes[i].materials.Length; j++)
             {
@@ -54,7 +54,7 @@ public class Grow : MonoBehaviour
                 growValue += 1 / (timeToGrow / refreshRate);
                 mat.SetFloat("GRow_", growValue);
 
-                yield return new WaitForSecounds(refreshRate);
+                yield return new WaitForSeconds (refreshRate);
             }
         }
 
@@ -65,7 +65,7 @@ public class Grow : MonoBehaviour
                 growValue -= 1 / (timeToGrow / refreshRate);
                 mat.SetFloat("GRow_", growValue);
 
-                yield return new WaitForSecounds(refreshRate);
+                yield return new WaitForSeconds (refreshRate);
             }
 
         }
