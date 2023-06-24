@@ -233,10 +233,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb9f0b635c83c50478a27e370f7f3b39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  growVinesMeshes: []
+  growVinesMeshes:
+  - {fileID: 388148703}
   timeToGrow: 5
   refreshRate: 0.05
-  minGrow: 0.2
+  minGrow: 0.081
   maxGrow: 0.984
 --- !u!1 &394049163
 GameObject:
@@ -726,7 +727,7 @@ PrefabInstance:
     - target: {fileID: 2340482, guid: c44bd9bdc114d4a60932c0087d9d1732, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: caee85f9faa23b64d97809377e060a51, type: 2}
+      objectReference: {fileID: 2100000, guid: a409963a3191c0b4e838d46c3fee4ae9, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c44bd9bdc114d4a60932c0087d9d1732, type: 3}
 --- !u!1 &1735465601 stripped
@@ -749,7 +750,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 6d58037af810b4021ac921a71033e575, type: 3}
---- !u!114 &1735465603
+--- !u!114 &1735465607
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -758,14 +759,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1735465601}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb9f0b635c83c50478a27e370f7f3b39, type: 3}
+  m_Script: {fileID: 11500000, guid: 1da3f257c726c9e4ab24b989c9b1cd59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  growVinesMeshes: []
-  timeToGrow: 5
-  refreshRate: 0.05
-  minGrow: 0.2
-  maxGrow: 0.97
+  growthRate: 0.1
+  maxScale: 0.5
+  minScale: 0
+  scaleChangeDirection: 1
+  delayDuration: 0.3
 --- !u!1 &2077792095
 GameObject:
   m_ObjectHideFlags: 0
@@ -778,6 +779,7 @@ GameObject:
   - component: {fileID: 2077792098}
   - component: {fileID: 2077792097}
   - component: {fileID: 2077792096}
+  - component: {fileID: 2077792100}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -864,3 +866,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2077792100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077792095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1da3f257c726c9e4ab24b989c9b1cd59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  growthRate: 0.1
+  maxScale: 2
+  minScale: 0
+  scaleChangeDirection: 1
+  delayDuration: 1

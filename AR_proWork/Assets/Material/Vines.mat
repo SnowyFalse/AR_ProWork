@@ -79,7 +79,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - Grow_: 0.294
+    - Grow_: 0.504
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
