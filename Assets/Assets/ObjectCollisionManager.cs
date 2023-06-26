@@ -9,20 +9,15 @@ public class ObjectCollisionManager : MonoBehaviour
 
     public GameObject firePlusQR;
     //https://stackoverflow.com/questions/50409639/check-if-collision-between-the-model-and-two-different-objects-is-happening-at-t
-
-    private void Start()
-    {
-        singleObject.gameObject.GetComponent<MeshRenderer>().enabled = true;
-        firePlusQR.gameObject.GetComponent<MeshRenderer>().enabled = false;
-    }
-
+    
     private void OnTriggerEnter(Collider other)
     {
+        
+        singleObject.SetActive(false);
         Debug.Log("COLLISION DETECTED");
-        singleObject.gameObject.GetComponent<MeshRenderer>().enabled = false;
         if (singleObject.gameObject.tag == "Level1")
         {
-            firePlusQR.gameObject.GetComponent<MeshRenderer>().enabled = true;
+            firePlusQR.SetActive(true);
         }
         /*
         {
