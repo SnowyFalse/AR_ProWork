@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig>
   <Tracking>
+    <ImageTarget name="ocean2" size="512.000000 512.000000" />
+    <ImageTarget name="drop5" size="612.000000 612.000000" />
+    <ImageTarget name="drop4" size="512.000000 512.000000" />
+    <ImageTarget name="wind2" size="512.000000 512.000000" />
+    <ImageTarget name="drop3" size="612.000000 612.000000" />
+    <ImageTarget name="drop2" size="612.000000 612.000000" />
+    <ImageTarget name="soil-01" size="512.000000 512.000000" />
+    <ImageTarget name="earth3" size="512.000000 512.000000" />
+    <ImageTarget name="earth2" size="612.000000 612.000000" />
+    <ImageTarget name="fire3" size="512.000000 512.000000" />
     <ImageTarget name="fire" size="300.000000 300.000000" />
     <ImageTarget name="water" size="300.000000 299.699707" />
     <ImageTarget name="QRCode" size="1.000000 1.000000" />
